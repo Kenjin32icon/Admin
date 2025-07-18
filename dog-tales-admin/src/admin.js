@@ -3,8 +3,9 @@
 require('dotenv').config();
 
 // Supabase setup (Vite env, see .env and .gitignore)
-const supabaseUrl = 'https://mekkzrxycoylxodgkfsn.supabase.co';
-const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
+// Replace with your actual values
+const supabaseUrl = 'https://your-project-id.supabase.co';
+const supabaseKey = 'your-anon-public-key';
 const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 // --- SOLID: Single Responsibility for UI ---
